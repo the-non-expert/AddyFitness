@@ -5,11 +5,12 @@
   import bgVideo from "$lib/images/addyBackground.mp4";
 </script>
 
-<div class="flex flex-col h-11/12">
-  <video autoplay loop muted class="video-bg">
+<div class="bgContainer flex flex-col h-full bg-black">
+  <!-- <video autoplay loop muted class="video-bg">
     <source src={bgVideo} type="video/mp4" />
     Your browser does not support the video tag.
-  </video>
+  </video> -->
+  <!-- <div class="bgContainer bg-black absolute h-auto w-full text-white" /> -->
 
   <Header />
 
@@ -61,6 +62,10 @@
 
   footer a {
     font-weight: bold;
+  }
+
+  .bgContainer {
+    z-index: -100;
   }
 
   @media (min-width: 480px) {
