@@ -1,7 +1,7 @@
 <script>
   import { goto } from "$app/navigation";
 
-  import icon from "$lib/images/addyFitnessicon.png";
+  import icon from "$lib/images/addyFitnessIcon.png";
   import logo from "$lib/images/addyFitnessLogo.png";
   import caption from "$lib/images/addyFitnessCaption.png";
   import phone from "$lib/images/phoneIcon.svg";
