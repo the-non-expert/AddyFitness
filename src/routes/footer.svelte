@@ -9,7 +9,7 @@
 
   import instagramIcon from "$lib/images/instagramIcon.svg";
   import whatsappIcon from "$lib/images/whatsappIcon.svg";
-  import linkedInIcon from "$lib/images/linkedInIcon.svg";
+  import linkedInIcon from "$lib/images/linkedinIcon.svg";
   import youtubeIcon from "$lib/images/youtubeIcon.svg";
 
   function handleButtonClick(route) {
