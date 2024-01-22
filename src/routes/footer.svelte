@@ -22,25 +22,25 @@
       id: 1,
       name: "Instagram",
       iconUrl: instagramIcon,
-      redirectLink: "www.google.com",
+      redirectLink: "",
     },
     {
       id: 2,
       name: "Whatsapp",
       iconUrl: whatsappIcon,
-      redirectLink: "www.google.com",
+      redirectLink: "",
     },
     {
       id: 3,
       name: "LinkedIn",
       iconUrl: linkedInIcon,
-      redirectLink: "www.google.com",
+      redirectLink: "",
     },
     {
       id: 4,
       name: "Youtube",
       iconUrl: youtubeIcon,
-      redirectLink: "www.google.com",
+      redirectLink: "",
     },
   ];
 </script>
