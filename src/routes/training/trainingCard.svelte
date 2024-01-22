@@ -11,19 +11,16 @@
   import calorieBlack from "$lib/images/calorieBlack.svg";
   import sessionBlack from "$lib/images/sessionBlack.svg";
   import bgVideo from "$lib/images/trainingCardBg.mp4";
+  import bgCards from "$lib/images/bgCards.png";
 </script>
 
 <div class={`text-black rounded-lg flex relative overflow-hidden`}>
   <!-- Video background for the current card -->
-  <video
-    autoplay
-    loop
-    muted
+  <img
+    src={bgCards}
     class="video-bg object-cover w-full h-full absolute"
-  >
-    <source src={bgVideo} type="video/mp4" />
-    Your browser does not support the video tag.
-  </video>
+    alt=""
+  />
 
   <!-- left part with the gif -->
   <div class="w-6/12 z-10">

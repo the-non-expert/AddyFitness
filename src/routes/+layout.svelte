@@ -3,6 +3,7 @@
   //   import "./styles.css";
   import "../tailwind.css";
   import bgVideo from "$lib/images/addyBackground.mp4";
+  import Footer from "./footer.svelte";
 </script>
 
 <div class="bgContainer flex flex-col h-full bg-black">
@@ -19,9 +20,7 @@
   </main>
 
   <footer>
-    <p>
-      visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to learn SvelteKit
-    </p>
+    <Footer />
   </footer>
 </div>
 
@@ -50,18 +49,6 @@
     max-width: 80rem;
     margin: 0 auto;
     box-sizing: border-box;
-  }
-
-  footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 12px;
-  }
-
-  footer a {
-    font-weight: bold;
   }
 
   .bgContainer {
