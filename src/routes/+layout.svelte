@@ -51,6 +51,14 @@
     box-sizing: border-box;
   }
 
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+  }
+
   .bgContainer {
     z-index: -100;
   }
