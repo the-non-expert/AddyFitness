@@ -121,9 +121,15 @@
     <p>©Copyright by AddyFitness Inc.</p>
 
     <div class="flex gap-6">
-      <p class="hover:text-red-400">Privacy Policies</p>
-      <p class="hover:text-red-400">Terms & Conditions</p>
-      <p class="hover:text-red-400">Cancellation & Refund</p>
+      <a href="/privacypolicies"
+        ><p class="hover:text-red-400">Privacy Policies</p></a
+      >
+      <a href="/terms&conditions"
+        ><p class="hover:text-red-400">Terms & Conditions</p></a
+      >
+      <a href="/cancellation&refund"
+        ><p class="hover:text-red-400">Cancellation & Refund</p></a
+      >
     </div>
   </div>
 </div>
