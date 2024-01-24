@@ -6,11 +6,11 @@
   import Footer from "./footer.svelte";
 </script>
 
-<div class="bgContainer flex flex-col h-full bg-black">
-  <!-- <video autoplay loop muted class="video-bg">
+<div class="bgContainer flex flex-col h-full">
+  <video autoplay loop muted class="video-bg">
     <source src={bgVideo} type="video/mp4" />
     Your browser does not support the video tag.
-  </video> -->
+  </video>
   <!-- <div class="bgContainer bg-black absolute h-auto w-full text-white" /> -->
 
   <Header />
