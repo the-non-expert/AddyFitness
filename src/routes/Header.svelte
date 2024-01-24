@@ -1,7 +1,8 @@
 <script>
   import { page } from "$app/stores";
-  import logo from "$lib/images/4.png";
-  import icon from "$lib/images/5.png";
+  import icon from "$lib/images/addyFitnessIcon.png";
+  import logo from "$lib/images/addyFitnessLogo.png";
+  import caption from "$lib/images/addyFitnessCaption.png";
   import login from "$lib/images/loginIcon.svg";
 
   $: activeRoute = $page.url.pathname;
@@ -24,9 +25,12 @@
   ];
 </script>
 
-<div class="flex justify-center mt-4 mb-2 gap-4">
-  <img src={icon} alt="icon" class="w-24" />
-  <img src={logo} alt="logo" class="w-96" />
+<div class="flex gap-2 items-center justify-center mt-5">
+  <img src={icon} alt="Icon" class="flex w-36 h-36" />
+  <div class="flex flex-col gap-2 justify-center items-center">
+    <img src={logo} alt="Icon" class="max-w-screen-sm" />
+    <img src={caption} alt="CaptionIcon" class="w-96" />
+  </div>
 </div>
 
 <header class="flex justify-between mt-4">
