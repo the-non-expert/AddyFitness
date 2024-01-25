@@ -26,7 +26,7 @@
 </script>
 
 <div class="flex gap-2 items-center justify-center mt-5">
-  <img src={icon} alt="Icon" class="flex w-36 h-36" />
+  <img src={icon} alt="Icon" class="flex h-36" />
   <div class="flex flex-col gap-2 justify-center items-center">
     <img src={logo} alt="Icon" class="max-w-screen-sm" />
     <img src={caption} alt="CaptionIcon" class="w-96" />
@@ -44,8 +44,8 @@
           <li
             class={`${
               isActive(item.redirectUrl)
-                ? "bg-white text-red-500"
-                : "hover:bg-white hover:text-red-500"
+                ? "bg-white text-pink-500"
+                : "hover:bg-white hover:text-pink-500"
             } pl-6 pr-6 rounded-3xl font-['Raleway'] text-xl font-semibold`}
           >
             {item.name}

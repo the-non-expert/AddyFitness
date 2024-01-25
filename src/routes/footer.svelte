@@ -50,7 +50,7 @@
 >
   <div class="flex flex-col items-center">
     <div class="flex gap-2 items-center">
-      <img src={icon} alt="Icon" class="flex w-16 h-16" />
+      <img src={icon} alt="Icon" class="flex h-16" />
       <div class="flex flex-col gap-1">
         <img src={logo} alt="Icon" class="w-64" />
         <img src={caption} alt="CaptionIcon" class="w-48" />
