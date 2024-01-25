@@ -3,13 +3,13 @@
 
 <div class="p-10 w-1/2 flex flex-col gap-8 bg-pink-300">
   <blockquote class="text-2xl font-semibold italic text-center text-slate-900">
-    Start your
+    The
     <span
       class="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-pink-500 relative inline-block"
     >
-      <span class="relative text-white">fitness</span>
+      <span class="relative text-white">Complete</span>
     </span>
-    journey
+    Health Solution
   </blockquote>
 
   <div class="flex flex-col gap-4 caret-pink-500 text-black">
