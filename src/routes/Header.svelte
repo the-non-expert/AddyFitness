@@ -40,7 +40,7 @@
     <ul class="flex p-1 gap-2">
       {#each navOptions as item (item.id)}
         <!-- svelte-ignore missing-declaration -->
-        <a href={item.redirectUrl} use:link>
+        <a href={item.redirectUrl}>
           <li
             class={`${
               isActive(item.redirectUrl)
