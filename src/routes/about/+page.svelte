@@ -40,16 +40,16 @@
   </div>
 
   <!-- About us Banner-->
-  <div class=" w-full mt-6">
+  <!-- <div class=" w-full mt-6">
     <img
       src={aboutBanner}
       alt="aboutBanner"
       class="rounded-lg w-screen h-80 object-cover object-top"
     />
-  </div>
+  </div> -->
 
   <!-- Vision -->
-  <div class=" flex gap-10 mt-12 bg-pink-300 rounded-3xl p-8 text-black">
+  <div class=" flex gap-10 mt-8 bg-pink-300 rounded-3xl p-8 text-black">
     <!-- <div class="w-3/6 font-[Montserrat] text-3xl font-bold">
       We've crafted a dynamic design to energize your fitness journey.
     </div> -->

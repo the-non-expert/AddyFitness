@@ -2,6 +2,7 @@
   import adnan from "$lib/images/AdnanImage.jpeg";
   import STripathy from "$lib/images/STripathy.jpeg";
   import SwastikP from "$lib/images/SwastikP.jpeg";
+  import Salini from "$lib/images/Salini.jpeg";
   import linkedinIcon from "$lib/images/linkedinIcon.svg";
   import githubIcon from "$lib/images/emailIconTeam.svg";
 
@@ -33,10 +34,10 @@
     {
       id: 4,
       name: "Salini Parida",
-      supportText: "Public Health Nutritionist",
+      supportText: "Addy Fitness | Nutritionist",
       designation: "(Indian Institute of Public Health)",
       supportText2: "",
-      image: adnan,
+      image: Salini,
     },
   ];
 </script>
