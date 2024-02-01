@@ -28,10 +28,12 @@
     </div>
 
     <!-- Call to action button -->
-    <button
-      class={`bg-black text-white rounded-3xl h-8 w-64 cursor-pointer ml-5`}
+    <a href="/contact">
+      <button
+        class={`bg-black text-white rounded-3xl h-8 w-64 cursor-pointer ml-5`}
+      >
+        {buttonText}
+      </button></a
     >
-      {buttonText}
-    </button>
   </div>
 </div>
