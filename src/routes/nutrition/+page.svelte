@@ -46,7 +46,7 @@
     },
     {
       id: 5,
-      name: "PCOS/PCOD",
+      name: "PCOS",
       gifSrc: PCOS,
       planDuration: "As per subscription",
       frequency: "Workout Plan Also Available",
@@ -94,7 +94,7 @@
     },
     {
       id: 11,
-      name: "Child Nutrition)",
+      name: "Child Nutrition",
       gifSrc: ChildNutrition,
       planDuration: "Yearly Plan",
       frequency: "Workout Plan Also Available",

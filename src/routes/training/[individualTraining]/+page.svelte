@@ -1,6 +1,8 @@
 <script>
   export let data;
 
+  import bgCards from "$lib/images/bgCards.png";
+
   let fetchData = data.props.data;
   console.log(fetchData);
 
@@ -17,7 +19,15 @@
   }
 </script>
 
-<div class="bg-pink-300 flex flex-col justify-center items-center rounded-xl">
+<div
+  class="flex flex-col justify-center items-center relative overflow-hidden rounded-xl"
+>
+  <img
+    src={bgCards}
+    class="video-bg object-cover w-full h-full absolute"
+    alt=""
+  />
+
   <div class="mt-10 text-6xl font-bold italic text-left">
     <span
       class="before:block before:absolute before:-inset-1 before:-skew-y-1 before:bg-pink-500 relative inline-block"
@@ -146,3 +156,9 @@
     </div>
   {/if}
 </div>
+
+<style>
+  .video-bg {
+    z-index: -1;
+  }
+</style>

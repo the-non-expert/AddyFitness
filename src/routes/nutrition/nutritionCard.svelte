@@ -12,6 +12,9 @@
   import sessionBlack from "$lib/images/sessionBlack.svg";
   import bgVideo from "$lib/images/trainingCardBg.mp4";
   import bgCards from "$lib/images/bgCards.png";
+
+  const routingNutritionTitle = title.toLowerCase().split(" ").join("");
+  const dynamicNutritionLink = `/nutrition/${routingNutritionTitle}`;
 </script>
 
 <div class={`text-black rounded-lg flex relative overflow-hidden`}>
@@ -50,10 +53,12 @@
     </div>
 
     <!-- Call to action button -->
-    <button
-      class={`bg-black text-white rounded-3xl h-8 w-64 cursor-pointer mr-2`}
+    <a href={dynamicNutritionLink}>
+      <button
+        class={`bg-black text-white rounded-3xl h-8 w-64 cursor-pointer mr-2`}
+      >
+        {buttonText}
+      </button></a
     >
-      {buttonText}
-    </button>
   </div>
 </div>
