@@ -1,13 +1,13 @@
-import Food1 from "../images/foodCarousalImages/food1.jpeg";
-import Food2 from "../images/foodCarousalImages/food2.jpeg";
-import Food3 from "../images/foodCarousalImages/food3.jpeg";
-import Food4 from "../images/foodCarousalImages/food4.jpeg";
-import Food5 from "../images/foodCarousalImages/food5.jpeg";
-import Food6 from "../images/foodCarousalImages/food6.jpeg";
-import Food7 from "../images/foodCarousalImages/food7.jpeg";
-import Food8 from "../images/foodCarousalImages/food8.jpeg";
-import Food9 from "../images/foodCarousalImages/food9.jpeg";
-import Food10 from "../images/foodCarousalImages/food10.jpeg";
+import Food1 from "../images/foodCarousalImages/Food1.jpeg";
+import Food2 from "../images/foodCarousalImages/Food2.jpeg";
+import Food3 from "../images/foodCarousalImages/Food3.jpeg";
+import Food4 from "../images/foodCarousalImages/Food4.jpeg";
+import Food5 from "../images/foodCarousalImages/Food5.jpeg";
+import Food6 from "../images/foodCarousalImages/Food6.jpeg";
+import Food7 from "../images/foodCarousalImages/Food7.jpeg";
+import Food8 from "../images/foodCarousalImages/Food8.jpeg";
+import Food9 from "../images/foodCarousalImages/Food9.jpeg";
+import Food10 from "../images/foodCarousalImages/Food10.jpeg";
 
 export const RecipeData = [
   {
