@@ -6,6 +6,11 @@
   import { trainingServices } from "./training/trainingData.js";
   import NutritionHomeCard from "../lib/homePageComponents/nutritionHomeCard.svelte";
   import TrainingHomeCard from "../lib/homePageComponents/trainingHomeCard.svelte";
+
+  import { RecipeData } from "$lib/homePageComponents/foodRecipeData.js";
+  import FoodRecipeCard from "../lib/homePageComponents/foodRecipeCard.svelte";
+
+  console.log(RecipeData);
 </script>
 
 <svelte:head>
@@ -46,7 +51,7 @@
     {/each}
   </ServicesCarousal>
 
-  <a
+  <!-- <a
     href="/nutrition"
     class="flex items-baseline gap-2 hover:text-pink-600 text-white
   text-white"
@@ -67,9 +72,27 @@
         />
       </div>
     {/each}
-  </ServicesCarousal>
+  </ServicesCarousal> -->
 
   <WhyChooseUs />
+
+  <div class="mt-10">
+    <blockquote class="text-5xl font-semibold italic text-center text-white">
+      <span class="relative text-white underline decoration-[#20ff30]"
+        >Healthy Meal Recipes!</span
+      >
+    </blockquote>
+
+    <div class="mt-10">
+      <ServicesCarousal>
+        {#each RecipeData as item (item.id)}
+          <div class="mr-1">
+            <FoodRecipeCard imgSrc={item.imgSrc} foodName={item.name} recipeLink={item.recipeLink} />
+          </div>
+        {/each}
+      </ServicesCarousal>
+    </div>
+  </div>
 </section>
 
 <style>
