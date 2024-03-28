@@ -132,9 +132,11 @@
         >
           <p class="text-2xl underline decoration-solid">{item.title}</p>
           <p class="font-bold text-3xl">₹{item.price}/-</p>
-          <button
-            class="bg-white font-bold hover:text-pink-600 p-2 rounded-xl mt-2 px-8"
-            >Buy Now</button
+          <a href={item.paymentLink} target="_blank">
+            <button
+              class="bg-white font-bold hover:text-pink-600 p-2 rounded-xl mt-2 px-8"
+              >Buy Now</button
+            ></a
           >
         </div>
       {/each}
@@ -147,9 +149,11 @@
         >
           <p class="text-2xl underline decoration-solid">{item.title}</p>
           <p class="font-bold text-3xl">₹{item.price}/-</p>
-          <button
-            class="bg-white font-bold hover:text-pink-600 p-2 rounded-xl mt-2 px-8"
-            >Buy Now</button
+          <a href={item.paymentLink} target="_blank">
+            <button
+              class="bg-white font-bold hover:text-pink-600 p-2 rounded-xl mt-2 px-8"
+              >Buy Now</button
+            ></a
           >
         </div>
       {/each}

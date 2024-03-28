@@ -22,18 +22,34 @@ export const cardData = [
       { time: "60-75 mins", calories: "300-400", sessions: "5" },
     ],
     buyingOptionsBatch: [
-      { title: "1 Month", price: "1399", paymentLink: "" },
-      { title: "3 Month", price: "3799", paymentLink: "" },
-      { title: "6 Month", price: "6899", paymentLink: "" },
+      {
+        title: "1 Month",
+        price: "1399",
+        paymentLink: "https://smartpay.easebuzz.in/113481/WORKOUT-1",
+      },
+      {
+        title: "3 Month",
+        price: "3799",
+        paymentLink: "https://smartpay.easebuzz.in/113481/WORKOUT-3",
+      },
+      {
+        title: "6 Month",
+        price: "6899",
+        paymentLink: "https://smartpay.easebuzz.in/113481/WORKOUT-6",
+      },
     ],
     buyingOptionsPersonal: [
-      { title: "1 Month", price: "2299", paymentLink: "" },
+      {
+        title: "1 Month",
+        price: "2299",
+        paymentLink: "https://smartpay.easebuzz.in/113481/WORKOUT-P",
+      },
     ],
   },
 
   //Yoga Data Starts Here................................................................
   {
-    id: 1,
+    id: 2,
     supportText:
       "Bring spirituality and calmness to your inner self with guided online yoga sessions that will help you relax and unwind your core.",
     route: "yoga",
@@ -53,12 +69,28 @@ export const cardData = [
       { time: "60-75 mins", calories: "300-400", sessions: "5" },
     ],
     buyingOptionsBatch: [
-      { title: "1 Month", price: "1399", paymentLink: "" },
-      { title: "3 Month", price: "3799", paymentLink: "" },
-      { title: "6 Month", price: "6899", paymentLink: "" },
+      {
+        title: "1 Month",
+        price: "1399",
+        paymentLink: "https://smartpay.easebuzz.in/113481/YOGA-1",
+      },
+      {
+        title: "3 Month",
+        price: "3799",
+        paymentLink: "https://smartpay.easebuzz.in/113481/YOGA-3",
+      },
+      {
+        title: "6 Month",
+        price: "6899",
+        paymentLink: "https://smartpay.easebuzz.in/113481/YOGA-6",
+      },
     ],
     buyingOptionsPersonal: [
-      { title: "1 Month", price: "2299", paymentLink: "" },
+      {
+        title: "1 Month",
+        price: "2299",
+        paymentLink: "https://smartpay.easebuzz.in/113481/YOGA-P",
+      },
     ],
   },
 
@@ -83,7 +115,13 @@ export const cardData = [
     traningDetails: [
       { time: "60-75 mins", calories: "300-400", sessions: "5" },
     ],
-    buyingOptionsBatch: [{ title: "1 Month", price: "1399", paymentLink: "" }],
+    buyingOptionsBatch: [
+      {
+        title: "1 Month",
+        price: "1399",
+        paymentLink: "https://smartpay.easebuzz.in/113481/DANCE",
+      },
+    ],
   },
 
   //Zumba Data Starts Here................................................................
@@ -108,12 +146,24 @@ export const cardData = [
       { time: "60-75 mins", calories: "300-400", sessions: "5" },
     ],
     buyingOptionsBatch: [
-      { title: "1 Month", price: "1399", paymentLink: "" },
-      { title: "3 Month", price: "3799", paymentLink: "" },
-      { title: "6 Month", price: "6899", paymentLink: "" },
+      {
+        title: "1 Month",
+        price: "1399",
+        paymentLink: "https://smartpay.easebuzz.in/113481/ZUMBA-1",
+      },
+      {
+        title: "3 Month",
+        price: "3799",
+        paymentLink: "https://smartpay.easebuzz.in/113481/ZUMBA-3",
+      },
+      {
+        title: "6 Month",
+        price: "6899",
+        paymentLink: "https://smartpay.easebuzz.in/113481/ZUMBA-6",
+      },
     ],
     buyingOptionsPersonal: [
-      { title: "1 Month", price: "2299", paymentLink: "" },
+      { title: "1 Month", price: "2299", paymentLink: "https://smartpay.easebuzz.in/113481/ZUMBA-P" },
     ],
   },
 
@@ -138,7 +188,13 @@ export const cardData = [
     traningDetails: [
       { time: "60-75 mins", calories: "300-400", sessions: "3" },
     ],
-    buyingOptionsBatch: [{ title: "1 Month", price: "1099", paymentLink: "" }],
+    buyingOptionsBatch: [
+      {
+        title: "1 Month",
+        price: "1099",
+        paymentLink: "https://smartpay.easebuzz.in/113481/HIIT_LIIT",
+      },
+    ],
   },
 
   //Old Age Workout Data Starts Here................................................................
@@ -163,6 +219,12 @@ export const cardData = [
     traningDetails: [
       { time: "60-75 mins", calories: "300-400", sessions: "3" },
     ],
-    buyingOptionsBatch: [{ title: "1 Month", price: "799", paymentLink: "" }],
+    buyingOptionsBatch: [
+      {
+        title: "1 Month",
+        price: "799",
+        paymentLink: "https://smartpay.easebuzz.in/113481/SENIOR-TRAINING",
+      },
+    ],
   },
 ];

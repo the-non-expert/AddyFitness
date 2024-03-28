@@ -1,5 +1,5 @@
 <script>
-  import homeImage from "$lib/images/weightlifting.jpeg";
+  import homeImage from "$lib/images/homePageSample.jpeg";
   import WhyChooseUs from "$lib/homePageComponents/whyChooseUs.svelte";
   import ServicesCarousal from "../lib/homePageComponents/servicesCarousal.svelte";
   import { nutritionServices } from "./nutrition/nutritionData";
@@ -19,11 +19,11 @@
 </svelte:head>
 
 <section>
-  <div class="w-screen h-80 rounded-xl">
+  <div class=" h-72 rounded-xl">
     <img
       src={homeImage}
       alt=""
-      class="object-cover w-full h-full object-center"
+      class="object-cover w-full h-full object-top border-2 border-lime-400 rounded-xl shadow-lg shadow-green-700"
     />
   </div>
 
@@ -87,7 +87,11 @@
       <ServicesCarousal>
         {#each RecipeData as item (item.id)}
           <div class="mr-1">
-            <FoodRecipeCard imgSrc={item.imgSrc} foodName={item.name} recipeLink={item.recipeLink} />
+            <FoodRecipeCard
+              imgSrc={item.imgSrc}
+              foodName={item.name}
+              recipeLink={item.recipeLink}
+            />
           </div>
         {/each}
       </ServicesCarousal>

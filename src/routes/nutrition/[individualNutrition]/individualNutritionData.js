@@ -23,13 +23,13 @@ export const nutritionCardData = [
       {
         title: "Nutritional Chart + WorkOut Plan",
         price: "1299",
-        paymentLink: "",
+        paymentLink: "https://smartpay.easebuzz.in/113481/WEIGHT-LOSS-C",
         optionType: "COMBO OFFER",
       },
       {
         title: "Only Nutritional Chart",
         price: "999",
-        paymentLink: "",
+        paymentLink: "https://smartpay.easebuzz.in/113481/WEIGHT-LOSS",
         optionType: "",
       },
     ],
@@ -37,7 +37,7 @@ export const nutritionCardData = [
 
   //Weight Gain Data Starts here................................................................
   {
-    id: 1,
+    id: 2,
     supportText:
       "Register here to sculpt your muscles and achieve your desired physique. Whether you aim to build muscle mass or define your shape, our program is tailored to help you reach your goals. Join us today and unleash your potential for a stronger, fitter you.",
     route: "weightgain",
@@ -56,21 +56,21 @@ export const nutritionCardData = [
       {
         title: "Nutritional Chart + WorkOut Plan",
         price: "1299",
-        paymentLink: "",
+        paymentLink: "https://smartpay.easebuzz.in/113481/WEIGHT-GAIN-C",
         optionType: "COMBO OFFER",
       },
       {
         title: "Only Nutritional Chart",
         price: "999",
         paymentLink: "",
-        optionType: "",
+        optionType: "https://smartpay.easebuzz.in/113481/WEIGHT-GAIN",
       },
     ],
   },
 
   //Diabetes Data Starts here................................................................
   {
-    id: 1,
+    id: 3,
     supportText:
       "Take control of your health and privacy. Register here to manage and monitor your blood sugar levels independently. Empower yourself to be your own boss of health with our tailored program.",
     route: "diabetes",
@@ -89,7 +89,7 @@ export const nutritionCardData = [
       {
         title: "2 Months",
         price: "999",
-        paymentLink: "",
+        paymentLink: "https://smartpay.easebuzz.in/113481/DIABETES",
         optionType: "",
       },
     ],
@@ -97,7 +97,7 @@ export const nutritionCardData = [
 
   //Thyroid Data Starts here................................................................
   {
-    id: 1,
+    id: 4,
     supportText:
       "Take charge of your health and privacy. Register now to manage and monitor your thyroid levels independently. Empower yourself to be in control of your thyroid health with our personalized program.",
     route: "thyroid",
@@ -116,7 +116,7 @@ export const nutritionCardData = [
       {
         title: "2 Months",
         price: "999",
-        paymentLink: "",
+        paymentLink: "https://smartpay.easebuzz.in/113481/THYROID",
         optionType: "",
       },
     ],
@@ -124,7 +124,7 @@ export const nutritionCardData = [
 
   //PCOS/PCOD Data Starts Here................................................................
   {
-    id: 1,
+    id: 5,
     supportText:
       "Maintain confidentiality and prioritize your health. Register now to discuss, manage, and recover from PCOS with our personalized program. Take control of your health journey with our support and guidance.",
     route: "pcos",
@@ -143,7 +143,7 @@ export const nutritionCardData = [
       {
         title: "2 Months",
         price: "999",
-        paymentLink: "",
+        paymentLink: "https://smartpay.easebuzz.in/113481/PCOD-PCOS",
         optionType: "",
       },
     ],
@@ -151,7 +151,7 @@ export const nutritionCardData = [
 
   //Gestation Data Starts Here................................................................
   {
-    id: 1,
+    id: 6,
     supportText:
       "Maintain confidentiality and prioritize your health. Register now to discuss, manage, and recover from PCOS with our personalized program. Take control of your health journey with our support and guidance.",
     route: "gestation(pregnancy)",
@@ -170,7 +170,7 @@ export const nutritionCardData = [
       {
         title: "One Time Subscription",
         price: "5999",
-        paymentLink: "",
+        paymentLink: "https://smartpay.easebuzz.in/113481/GESTATION",
         optionType: "",
       },
     ],
@@ -197,7 +197,7 @@ export const nutritionCardData = [
       {
         title: "One Time Subscription",
         price: "6999",
-        paymentLink: "",
+        paymentLink: "https://smartpay.easebuzz.in/113481/POST-PREGNANCY",
         optionType: "",
       },
     ],
@@ -224,7 +224,7 @@ export const nutritionCardData = [
       {
         title: "2 Months",
         price: "799",
-        paymentLink: "",
+        paymentLink: "https://smartpay.easebuzz.in/113481/SENIOR-AGE",
         optionType: "",
       },
     ],
@@ -251,7 +251,7 @@ export const nutritionCardData = [
       {
         title: "2 Months",
         price: "999",
-        paymentLink: "",
+        paymentLink: "https://smartpay.easebuzz.in/113481/BLOOD-PRESSURE",
         optionType: "",
       },
     ],
@@ -259,7 +259,7 @@ export const nutritionCardData = [
 
   //Renal Function Data Starts Here................................................................
   {
-    id: 9,
+    id: 10,
     supportText:
       "Experience a comprehensive plan meticulously addressing all aspects of your kidney's recovery and maintenance needs. Our detailed approach ensures proper care, aiding in your kidney's recovery and long-term maintenance for improved health and vitality.",
     route: "renalfunction(kidney)",
@@ -278,7 +278,7 @@ export const nutritionCardData = [
       {
         title: "2 Months",
         price: "999",
-        paymentLink: "",
+        paymentLink: "https://smartpay.easebuzz.in/113481/RENAL",
         optionType: "",
       },
     ],
@@ -305,7 +305,7 @@ export const nutritionCardData = [
       {
         title: "Yearly Subscription",
         price: "4999",
-        paymentLink: "",
+        paymentLink: "https://smartpay.easebuzz.in/113481/CHILD-NUTRITION",
         optionType: "",
       },
     ],
@@ -332,7 +332,7 @@ export const nutritionCardData = [
       {
         title: "2 Months",
         price: "999",
-        paymentLink: "",
+        paymentLink: "https://smartpay.easebuzz.in/113481/ANEAMIA",
         optionType: "",
       },
     ],
