@@ -1,14 +1,14 @@
 <script>
   import homeImage from "$lib/images/homePageSample.jpeg";
-  import WhyChooseUs from "../lib/homePageComponents/WhyChooseUs.svelte";
-  import ServicesCarousal from "../lib/homePageComponents/servicesCarousal.svelte";
+  import WhyChooseUs from "$lib/homePageComponents/WhyChooseUs.svelte";
+  import ServicesCarousal from "$lib/homePageComponents/servicesCarousal.svelte";
   import { nutritionServices } from "./nutrition/nutritionData";
   import { trainingServices } from "./training/trainingData.js";
   import NutritionHomeCard from "../lib/homePageComponents/nutritionHomeCard.svelte";
-  import TrainingHomeCard from "../lib/homePageComponents/trainingHomeCard.svelte";
+  import TrainingHomeCard from "$lib/homePageComponents/trainingHomeCard.svelte";
 
   import { RecipeData } from "$lib/homePageComponents/foodRecipeData.js";
-  import FoodRecipeCard from "../lib/homePageComponents/foodRecipeCard.svelte";
+  import FoodRecipeCard from "$lib/homePageComponents/foodRecipeCard.svelte";
 </script>
 
 <svelte:head>
