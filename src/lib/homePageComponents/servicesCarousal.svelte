@@ -1,10 +1,6 @@
 <script>
   import Siema from "siema";
   import { onMount, createEventDispatcher } from "svelte";
-  import Live from "$lib/images/liveExercise.gif";
-  import TrainingCard from "../../routes/training/trainingCard.svelte";
-  import NutritionCard from "../../routes/nutrition/nutritionCard.svelte";
-  import { nutritionServices } from "../../routes/nutrition/nutritionData.js";
 
   export let perPage = 3;
   export let loop = true;
@@ -136,6 +132,9 @@
   {#if dots}
     <ul>
       {#each { length: totalDots } as _, i}
+        <!-- svelte-ignore a11y-click-events-have-key-events -->
+        <!-- svelte-ignore a11y-click-events-have-key-events -->
+        <!-- svelte-ignore a11y-no-noninteractive-element-interactions -->
         <li
           on:click={() => go(i * currentPerPage)}
           class={isDotActive(currentIndex, i) ? "active" : ""}

@@ -13,7 +13,7 @@
 <div class="text-white flex gap-3 h-32 rounded-xl relative overflow-hidden">
   <img src={bgCards} class="object-cover w-full h-full absolute" alt="" />
 
-  <div class="z-10 w-44">
+  <div class="z-10">
     <img src={gifSrc} alt="" class="w-full h-full object-cover rounded-xl" />
   </div>
 

@@ -1,6 +1,6 @@
 <script>
   import homeImage from "$lib/images/weightlifting.jpeg";
-  import whyChooseUsImg1 from "$lib/images/whyChooseUsImg1.gif";
+  import Choice1 from "$lib/images/Choice1.svg";
   import whyChooseUsImg2 from "$lib/images/whyChooseUs2.gif";
 </script>
 
@@ -11,26 +11,24 @@
     >
   </blockquote>
 
-  <div class="w-full flex gap-12 mt-10">
-    <div class="w-1/2 flex gap-8">
-      <div class="w-[500px] h-80">
+  <div class="w-full justify-center mt-10">
+    <!-- <div class="w-1/2 flex gap-8">
+      <div class="h-80">
         <img
-          src={whyChooseUsImg1}
+          src={Choice1}
           alt=""
           class="object-cover w-full h-full rounded-xl"
         />
       </div>
-      <div class="w-[600px] h-80 mt-10">
+      <div class=" h-80 mt-10">
         <img
-          src={whyChooseUsImg2}
+          src={Choice1}
           alt=""
           class="object-cover w-full h-full rounded-xl object-right"
         />
       </div>
-    </div>
-    <div
-      class="w-1/2 bg-pink-400 font-[Montserrat] font-medium p-10 rounded-xl"
-    >
+    </div> -->
+    <div class=" bg-pink-400 font-[Montserrat] font-medium p-10 rounded-xl">
       <ul class="list-disc">
         <li>
           Addy Fitness offers comprehensive health care and fitness facilities

@@ -7,6 +7,8 @@
 
   $: activeRoute = $page.url.pathname;
 
+  $: isLoggedIn = true;
+
   /**
    * @param {string} route
    */
@@ -22,6 +24,11 @@
     { id: 6, name: "Management", redirectUrl: "/management" },
     { id: 7, name: "Contact", redirectUrl: "/contact" },
     { id: 8, name: "About", redirectUrl: "/about" },
+    {
+      id: 9,
+      name: isLoggedIn ? "Your Profile" : "Log In",
+      redirectUrl: isLoggedIn ? "/yourProfile" : "/login",
+    },
   ];
 </script>
 
@@ -33,8 +40,8 @@
   </div>
 </div>
 
-<header class="flex justify-between mt-4">
-  <div class="w-32"></div>
+<header class="flex justify-center mt-4">
+  <!-- <div class="w-32"></div> -->
 
   <div class="text-white">
     <ul class="flex p-1 gap-2">
@@ -55,8 +62,8 @@
     </ul>
   </div>
 
-  <div class="flex pr-4 items-center gap-2 cursor-pointer">
+  <!-- <div class="flex pr-4 items-center gap-2 cursor-pointer">
     <img src={login} alt="Login" class="w-6" />
     <p class="text-white font-['Montserrat']">Login</p>
-  </div>
+  </div> -->
 </header>

@@ -1,17 +1,27 @@
 <script>
   import Header from "./Header.svelte";
+  import { page } from "$app/stores";
   //   import "./styles.css";
   import "../tailwind.css";
   import bgVideo from "$lib/images/addyBackground.mp4";
   import Footer from "./footer.svelte";
+
+  $: activeRoute = $page.url.pathname;
+
+  console.log(activeRoute);
+
+  const noFooterRoutes = ["/login"];
+  $: showFooter = !noFooterRoutes.includes($page.path);
+
+  console.log(showFooter);
 </script>
 
 <div class="bgContainer flex flex-col h-full">
-  <video autoplay loop muted class="video-bg">
+  <!-- <video autoplay loop muted class="video-bg">
     <source src={bgVideo} type="video/mp4" />
     Your browser does not support the video tag.
-  </video>
-  <!-- <div class="bgContainer bg-black absolute h-auto w-full text-white" /> -->
+  </video> -->
+  <div class="websiteBg" />
 
   <Header />
 
@@ -19,9 +29,11 @@
     <slot />
   </main>
 
-  <footer>
-    <Footer />
-  </footer>
+  {#if showFooter}
+    <footer>
+      <Footer />
+    </footer>
+  {/if}
 </div>
 
 <style>
@@ -60,6 +72,16 @@
   }
 
   .bgContainer {
+    z-index: -10;
+  }
+
+  .websiteBg {
+    background-color: black;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
     z-index: -100;
   }
 

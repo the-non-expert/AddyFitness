@@ -24,16 +24,19 @@ export const cardData = [
     buyingOptionsBatch: [
       {
         title: "1 Month",
+        name: "Live WorkOut Home Session",
         price: "1399",
         paymentLink: "https://smartpay.easebuzz.in/113481/WORKOUT-1",
       },
       {
         title: "3 Month",
+        name: "Live WorkOut Home Session",
         price: "3799",
         paymentLink: "https://smartpay.easebuzz.in/113481/WORKOUT-3",
       },
       {
         title: "6 Month",
+        name: "Live WorkOut Home Session",
         price: "6899",
         paymentLink: "https://smartpay.easebuzz.in/113481/WORKOUT-6",
       },
@@ -163,7 +166,11 @@ export const cardData = [
       },
     ],
     buyingOptionsPersonal: [
-      { title: "1 Month", price: "2299", paymentLink: "https://smartpay.easebuzz.in/113481/ZUMBA-P" },
+      {
+        title: "1 Month",
+        price: "2299",
+        paymentLink: "https://smartpay.easebuzz.in/113481/ZUMBA-P",
+      },
     ],
   },
 

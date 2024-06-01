@@ -2,9 +2,10 @@
   export let data;
 
   import bgCards from "$lib/images/bgCards.png";
+  import { paymentLogic } from "../../../lib/Payment/paymentLogic.js";
 
   let fetchData = data.props.data;
-  console.log(fetchData);
+  // console.log(fetchData);
 
   let selectedTrainingType = fetchData.typeOfTraining[0] || "";
 
@@ -17,6 +18,13 @@
   function handleTimeSelection(time) {
     selectedTrainingTime = time;
   }
+
+  let handleClick = (amount, title, courseTitle) => {
+    // Your function logic here
+    console.log(amount, title, courseTitle);
+
+    paymentLogic(amount, title, courseTitle);
+  };
 </script>
 
 <div
@@ -24,7 +32,7 @@
 >
   <img
     src={bgCards}
-    class="video-bg object-cover w-full h-full absolute"
+    class="bgCont object-cover w-full h-full absolute"
     alt=""
   />
 
@@ -132,11 +140,12 @@
         >
           <p class="text-2xl underline decoration-solid">{item.title}</p>
           <p class="font-bold text-3xl">₹{item.price}/-</p>
-          <a href={item.paymentLink} target="_blank">
-            <button
-              class="bg-white font-bold hover:text-pink-600 p-2 rounded-xl mt-2 px-8"
-              >Buy Now</button
-            ></a
+
+          <button
+            class="bg-white font-bold hover:text-pink-600 p-2 rounded-xl mt-2 px-8"
+            on:click={() =>
+              handleClick(item.price, item.title, fetchData.title)}
+            >Buy Now</button
           >
         </div>
       {/each}
@@ -162,7 +171,7 @@
 </div>
 
 <style>
-  .video-bg {
+  .bgCont {
     z-index: -1;
   }
 </style>

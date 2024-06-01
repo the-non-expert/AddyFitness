@@ -3,8 +3,17 @@
   import bgCards from "$lib/images/bgCards.png";
   import gifSample from "$lib/images/weightGain.gif";
 
+  import { paymentLogic } from "../../../lib/Payment/paymentLogic.js";
+
   let fetchData = data.props.data;
   console.log(fetchData);
+
+  let handleClick = (amount, title, courseTitle) => {
+    // Your function logic here
+    console.log(amount, title, courseTitle);
+
+    paymentLogic(amount, title, courseTitle);
+  };
 </script>
 
 <div
@@ -58,11 +67,12 @@
         >
           <p class="text-2xl underline decoration-solid">{item.title}</p>
           <p class="font-bold text-3xl">₹{item.price}/-</p>
-          <a href={item.paymentLink} target="_blank">
-            <button
-              class="bg-white font-bold hover:text-pink-600 p-2 rounded-xl mt-2 px-8"
-              >Buy Now</button
-            ></a
+          <!-- <a href={item.paymentLink} target="_blank"> -->
+          <button
+            class="bg-white font-bold hover:text-pink-600 p-2 rounded-xl mt-2 px-8"
+            on:click={() =>
+              handleClick(item.price, item.title, fetchData.title)}
+            >Buy Now</button
           >
           <span
             class="px-5 font-bold text-sm bg-[#20ff30] text-pink-900 rounded-2xl"
