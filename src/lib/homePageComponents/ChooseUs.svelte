@@ -1,7 +1,7 @@
 <script>
-  import homeImage from "$lib/images/weightlifting.jpeg";
-  import Choice1 from "$lib/images/Choice1.svg";
-  import whyChooseUsImg2 from "$lib/images/whyChooseUs2.gif";
+  // import homeImage from "$lib/images/weightlifting.jpeg";
+  // import Choice1 from "$lib/images/Choice1.svg";
+  // import whyChooseUsImg2 from "$lib/images/whyChooseUs2.gif";
 </script>
 
 <div class="mt-10">

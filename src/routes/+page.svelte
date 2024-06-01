@@ -1,6 +1,6 @@
 <script>
   import homeImage from "$lib/images/homePageSample.jpeg";
-  import WhyChooseUs from "$lib/homePageComponents/WhyChooseUs.svelte";
+
   import ServicesCarousal from "$lib/homePageComponents/servicesCarousal.svelte";
   import { nutritionServices } from "./nutrition/nutritionData";
   import { trainingServices } from "./training/trainingData.js";
@@ -9,6 +9,7 @@
 
   import { RecipeData } from "$lib/homePageComponents/foodRecipeData.js";
   import FoodRecipeCard from "$lib/homePageComponents/foodRecipeCard.svelte";
+  import ChooseUs from "../lib/homePageComponents/ChooseUs.svelte";
 </script>
 
 <svelte:head>
@@ -72,7 +73,9 @@
     {/each}
   </ServicesCarousal> -->
 
-  <WhyChooseUs />
+  <div>
+    <ChooseUs />
+  </div>
 
   <div class="mt-10">
     <blockquote class="text-5xl font-semibold italic text-center text-white">
