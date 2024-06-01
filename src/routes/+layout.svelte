@@ -43,15 +43,14 @@
     min-height: 100vh;
   } */
 
-  .video-bg {
+  /* .video-bg {
     position: fixed;
     bottom: 0;
     right: 0;
     min-width: 100%;
     min-height: 100%;
     z-index: -1;
-    /* opacity: 0.3; */
-  }
+  } */
 
   main {
     flex: 1;
