@@ -5,45 +5,28 @@
 </script>
 
 <div class="mt-10">
-  <blockquote class="text-5xl font-semibold italic text-center text-white">
-    <span class="relative text-white underline decoration-[#20ff30]"
-      >Why Choose Addy Fitness?</span
-    >
-  </blockquote>
+  <div class="">
+    <p class="text-5xl font-bold text-white font-[Montserrat] text-center">
+      <span>Why</span>
+      <span class="text-outline"> Choose</span>
+      <span>Addy</span>
+      <span class="text-outline">Fitness</span>
+    </p>
+  </div>
 
-  <div class="w-full justify-center mt-10">
-    <!-- <div class="w-1/2 flex gap-8">
-      <div class="h-80">
-        <img
-          src={Choice1}
-          alt=""
-          class="object-cover w-full h-full rounded-xl"
-        />
-      </div>
-      <div class=" h-80 mt-10">
-        <img
-          src={Choice1}
-          alt=""
-          class="object-cover w-full h-full rounded-xl object-right"
-        />
-      </div>
-    </div> -->
-    <div class=" bg-pink-400 font-[Montserrat] font-medium p-10 rounded-xl">
-      <ul class="list-disc">
+  <div class="w-full justify-center p-5 text-">
+    <div
+      class=" bg-pink-400 w-9/12 mx-auto font-[Montserrat] font-medium p-7 chooseUs rounded-xl"
+    >
+      <ul class="list-disc listDesign flex flex-col gap-4">
+        <li>Comprehensive health care and fitness facilities</li>
         <li>
-          Addy Fitness offers comprehensive health care and fitness facilities
-          beyond just a fitness page.
+          Positively impacting lives and helping clients lead healthier, happier
+          lives.
         </li>
+        <li>Franchising opportunities are available Pan India</li>
         <li>
-          We take pride in positively impacting lives and helping clients lead
-          healthier, happier lives.
-        </li>
-        <li>
-          Franchising opportunities are available pan India, providing support
-          and resources for growth.
-        </li>
-        <li>
-          Our holistic approach encompasses both physical fitness and overall
+          Holistic approach encompasses both physical fitness and overall
           well-being.
         </li>
         <li>
@@ -53,10 +36,23 @@
       </ul>
       <a href="/about">
         <button
-          class="bg-white text-black hover:text-pink-500 p-2 px-8 rounded-xl mt-5 font-semibold"
+          class="bg-white text-black hover:text-pink-500 p-2 px-8 rounded-xl mt-5 font-semibold w-full"
           >See More...</button
         >
       </a>
     </div>
   </div>
 </div>
+
+<style>
+  .text-outline {
+    color: transparent;
+    -webkit-text-stroke: 2px white;
+  }
+
+  @media (max-width: 999px) {
+    .chooseUs {
+      width: 90%;
+    }
+  }
+</style>

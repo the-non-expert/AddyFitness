@@ -1,7 +1,8 @@
 <script>
   import { page } from "$app/stores";
   import icon from "$lib/images/addyFitnessIcon.png";
-  import logo from "$lib/images/addyFitnessLogo.png";
+  // import logo from "$lib/images/addyFitnessLogo.png";
+  import logo from "$lib/images/ad3.png";
   import caption from "$lib/images/addyFitnessCaption.png";
   import login from "$lib/images/loginIcon.svg";
 
@@ -33,9 +34,9 @@
 </script>
 
 <div class="flex gap-2 items-center justify-center mt-5">
-  <img src={icon} alt="Icon" class="flex h-36" />
-  <div class="flex flex-col gap-2 justify-center items-center">
-    <img src={logo} alt="Icon" class="max-w-screen-sm" />
+  <!-- <img src={icon} alt="Icon" class="flex h-36" /> -->
+  <div class="flex flex-col gap-2 justify-center items-center logoCont">
+    <img src={logo} alt="Icon" class="w-8/12" />
     <img src={caption} alt="CaptionIcon" class="w-96" />
   </div>
 </div>
@@ -43,8 +44,8 @@
 <header class="flex justify-center mt-4">
   <!-- <div class="w-32"></div> -->
 
-  <div class="text-white">
-    <ul class="flex p-1 gap-2">
+  <div class="text-white headerOptions">
+    <ul class="flex p-1 gap-2 listCont">
       {#each navOptions as item (item.id)}
         <!-- svelte-ignore missing-declaration -->
         <a href={item.redirectUrl}>
@@ -67,3 +68,29 @@
     <p class="text-white font-['Montserrat']">Login</p>
   </div> -->
 </header>
+
+<style>
+  @media only screen and (max-width: 999px) {
+    .logoCont {
+      width: 90%;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    /* .headerOptions {
+      width: 90%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin-bottom: 15px;
+      margin-top: 25px;
+    } */
+
+    .listCont {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+</style>

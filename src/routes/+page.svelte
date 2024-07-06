@@ -10,102 +10,30 @@
   import { RecipeData } from "$lib/homePageComponents/foodRecipeData.js";
   import FoodRecipeCard from "$lib/homePageComponents/foodRecipeCard.svelte";
   import ChooseUs from "../lib/homePageComponents/ChooseUs.svelte";
+  import HomeHero from "../lib/homePageComponents/homeHero.svelte";
 </script>
 
 <svelte:head>
   <title>Home</title>
-  <meta name="description" content="Svelte demo app" />
+  <meta name="description" content="Addy Fitness" />
 </svelte:head>
 
 <section>
-  <div class=" h-72 rounded-xl">
-    <img
-      src={homeImage}
-      alt=""
-      class="object-cover w-full h-full object-top border-2 border-lime-400 rounded-xl shadow-lg shadow-green-700"
-    />
-  </div>
-
-  <a
-    href="/training"
-    class="flex items-baseline gap-2 hover:text-pink-600 text-white
-  text-white"
-  >
-    <p class=" text-2xl font-[Montserrat] mb-4 font-bold mt-5 pointer">
-      Training Services
-    </p>
-    <span class=" text-xs">(click here to know more)</span>
-  </a>
-  <ServicesCarousal perPage={3}>
-    {#each trainingServices as item (item.id)}
-      <div class="mr-1">
-        <TrainingHomeCard
-          title={item.name}
-          host="with Adnan Ali"
-          buttonText="Book a Slot"
-          gifSrc={item.gifSrc}
-          route={item.route}
-        />
-      </div>
-    {/each}
-  </ServicesCarousal>
-
-  <!-- <a
-    href="/nutrition"
-    class="flex items-baseline gap-2 hover:text-pink-600 text-white
-  text-white"
-  >
-    <p class=" text-2xl font-[Montserrat] mb-4 font-bold mt-5 pointer">
-      Nutrition Services
-    </p>
-    <span class=" text-xs">(click here to know more)</span>
-  </a>
-  <ServicesCarousal>
-    {#each nutritionServices as item (item.id)}
-      <div class="mr-1">
-        <NutritionHomeCard
-          title={item.name}
-          host="with Adnan Ali"
-          buttonText="Get your Nutrition Chart"
-          gifSrc={item.gifSrc}
-        />
-      </div>
-    {/each}
-  </ServicesCarousal> -->
-
+  <HomeHero />
   <div>
     <ChooseUs />
-  </div>
-
-  <div class="mt-10">
-    <blockquote class="text-5xl font-semibold italic text-center text-white">
-      <span class="relative text-white underline decoration-[#20ff30]"
-        >Healthy Meal Recipes!</span
-      >
-    </blockquote>
-
-    <div class="mt-10">
-      <ServicesCarousal>
-        {#each RecipeData as item (item.id)}
-          <div class="mr-1">
-            <FoodRecipeCard
-              imgSrc={item.imgSrc}
-              foodName={item.name}
-              recipeLink={item.recipeLink}
-            />
-          </div>
-        {/each}
-      </ServicesCarousal>
-    </div>
   </div>
 </section>
 
 <style>
   section {
-    display: flex;
-    flex-direction: column;
-    /* justify-content: center; */
-    /* align-items: center; */
-    flex: 0.6;
+    /* display: flex; */
+    /* flex-direction: column; */
+  }
+
+  @media only screen and (max-width: 850px) {
+    .homeHeroImage {
+      width: 90%;
+    }
   }
 </style>
