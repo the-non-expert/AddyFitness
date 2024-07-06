@@ -52,7 +52,7 @@
   ];
 </script>
 
-<div class="text-white mt-6 grid grid-cols-2 gap-x-10 gap-y-4">
+<div class="text-white mt-6 p-6 grid grid-cols-1 md:grid-cols-2 gap-6">
   {#each nutritionServices as item (item.id)}
     <HealthcareCard
       title={item.name}

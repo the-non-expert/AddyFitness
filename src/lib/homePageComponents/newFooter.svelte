@@ -49,10 +49,10 @@
     <div class="flex gap-5 footerOptions mt-5">
       <a href="/" class="font-semibold">Home</a>
       <a href="/about" class="font-semibold">About</a>
-      <a href="/services" class="font-semibold">Training</a>
-      <a href="/services" class="font-semibold">Nutrition</a>
-      <a href="/services" class="font-semibold">Management</a>
-      <a href="/services" class="font-semibold">Healthcare</a>
+      <a href="/training" class="font-semibold">Training</a>
+      <a href="/nutrition" class="font-semibold">Nutrition</a>
+      <a href="/management" class="font-semibold">Management</a>
+      <a href="/healthcare" class="font-semibold">Healthcare</a>
 
       <a href="/contact" class="font-semibold">Contact Us</a>
       <!-- <a href="/management" class="font-semibold">Management</a> -->
