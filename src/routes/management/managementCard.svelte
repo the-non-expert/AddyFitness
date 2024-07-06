@@ -7,17 +7,19 @@
   import bgCards from "$lib/images/bgCards.png";
 </script>
 
-<div class={`text-black rounded-lg flex relative overflow-hidden`}>
+<div
+  class={`w-10/12 md:w-6/12 mx-auto text-black rounded-lg flex flex-col md:flex-row relative overflow-hidden`}
+>
   <!-- Video background for the current card -->
   <img src={bgCards} class="object-cover w-full h-full absolute" alt="" />
 
   <!-- left part with the gif -->
-  <div class=" z-10">
-    <img src={gifSrc} alt="gif" class="w-64 h-52 object-cover" />
+  <div class="w-full md:w-6/12 z-10 flex justify-center items-center">
+    <img src={gifSrc} alt="gif" class="" />
   </div>
 
   <!-- right part with details and button -->
-  <div class="flex flex-col justify-evenly items-center z-10 px-1">
+  <div class="flex flex-col justify-evenly items-center gap-3 z-10 px-1 m-5">
     <div>
       <h2 class="text-xl font-bold text-red-500">{title}</h2>
       <h2 class="">{host}</h2>

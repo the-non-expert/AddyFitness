@@ -42,32 +42,26 @@
   ];
 </script>
 
-<div class="flex justify-evenly">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 p-4">
   {#each teamDetails as member (member.id)}
-    <div>
-      <div class="">
-        <img
-          src={member.image}
-          alt="adnanImage"
-          class="object-cover w-64 h-96 rounded-3xl"
-        />
-      </div>
-
-      <div
-        class="text-center mt-4 flex flex-col justify-evenly w-full bg-pink-300 rounded-xl h-36 px-4"
-      >
+    <div class="flex flex-col items-center">
+      <img
+        src={member.image}
+        alt="adnanImage"
+        class="object-cover w-full h-96 rounded-3xl"
+      />
+      <div class="text-center mt-4 bg-pink-300 rounded-xl p-4 w-full">
         <p class="text-xl font-bold text-[Montserrat] text-pink-700">
           {member.name}
         </p>
         <p class="text-black">{member.supportText}</p>
         <p class="text-black">{member.designation}</p>
         <p class="text-black">{member.supportText2}</p>
-
         <div class="flex justify-center mt-2 gap-3">
-          <a href={member.linkedin} target="_blank" class="mx-1">
-            <img src={linkedinIcon} alt="github" class="w-6" />
+          <a href={member.linkedin} target="_blank">
+            <img src={linkedinIcon} alt="linkedin" class="w-6" />
           </a>
-          <a href={member.github} target="_blank" class="mx-1">
+          <a href={member.github} target="_blank">
             <img src={githubIcon} alt="github" class="w-6" />
           </a>
         </div>
@@ -75,3 +69,9 @@
     </div>
   {/each}
 </div>
+
+<style>
+  img {
+    max-height: 100%;
+  }
+</style>

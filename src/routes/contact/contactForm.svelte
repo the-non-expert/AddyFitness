@@ -37,7 +37,7 @@
   };
 </script>
 
-<div class="p-10 w-1/2 flex flex-col gap-8 bg-pink-300">
+<div class="p-10 w-full md:w-1/2 rounded-xl flex flex-col gap-8 bg-pink-300">
   <blockquote class="text-2xl font-semibold italic text-center text-slate-900">
     The
     <span
@@ -50,7 +50,7 @@
 
   <form
     on:submit|preventDefault={handleSubmit}
-    class="flex flex-col gap-4 caret-pink-500 text-black"
+    class="caret-pink-500 text-black flex flex-col gap-4"
   >
     <div class="flex flex-col gap-1">
       <p>Full Name</p>
@@ -58,7 +58,7 @@
         type="text"
         bind:value={$formData.fullName}
         placeholder="Your Name"
-        class="rounded-lg p-2 w-9/12 text-black placeholder:text-sm outline-none"
+        class="rounded-lg p-2 w-full text-black placeholder:text-sm outline-none"
       />
     </div>
     <div class="flex flex-col gap-1">
@@ -67,7 +67,7 @@
         type="text"
         bind:value={$formData.email}
         placeholder="abc@company.com"
-        class="rounded-lg p-2 w-9/12 text-black placeholder:text-sm outline-none"
+        class="rounded-lg p-2 w-full text-black placeholder:text-sm outline-none"
       />
     </div>
     <div class="flex flex-col gap-1">
@@ -77,7 +77,7 @@
         type="tel"
         bind:value={$formData.phone}
         placeholder="+91 12345 67890"
-        class="rounded-lg p-2 w-9/12 text-black placeholder:text-sm outline-none"
+        class="rounded-lg p-2 w-full text-black placeholder:text-sm outline-none"
       />
     </div>
     <div class="flex flex-col gap-1">
@@ -86,11 +86,11 @@
         type="text"
         bind:value={$formData.message}
         placeholder="Leave us a Message..."
-        class="rounded-lg p-2 w-9/12 text-black placeholder:text-sm outline-none"
+        class="rounded-lg p-2 w-full text-black placeholder:text-sm outline-none"
       />
     </div>
     <button
-      class="bg-[#242124] text-white rounded-lg h-12 w-1/2 hover:text-pink-600 hover:bg-white font-bold"
+      class="bg-[#242124] text-white rounded-lg h-12 w-full hover:text-pink-600 hover:bg-white font-bold"
       type="submit">Send Message</button
     >
   </form>

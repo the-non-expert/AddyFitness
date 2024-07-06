@@ -34,7 +34,9 @@
   ];
 </script>
 
-<div class="p-10 w-1/2 flex flex-col gap-4">
+<div
+  class="p-10 w-full md:w-1/2 flex flex-col gap-4 border-2 border-pink-400 rounded-xl"
+>
   <p class="font-semibold text-pink-500">Get in Touch</p>
   <p>
     We love to hear from you. Our friendly team is always here to contact with

@@ -26,7 +26,7 @@
   ];
 </script>
 
-<div class="text-white mt-6 flex flex-col gap-10 w-full">
+<div class="text-white mt-6 mb-6 flex flex-col gap-10 w-full">
   {#each managementServices as item (item.id)}
     <ManagementCard
       title={item.name}
